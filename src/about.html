@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+
+<body>
+
+  <%= require('html-loader!./template/common/nav.html') %>
+
+  <div class="container">
+      
+    <main role="main">
+      <div class="jumbotron">
+          <div class="text-center" style="font-size: 24px; margin-top: 30px;">
+              <div class="row">
+                  <div class="col-xs-2">
+                        <i class="fas fa-user"></i>
+                        <i class="fab fa-facebook"></i>
+                        <i class="fa fa-address-book"></i>
+                      <div>
+                          <i class="far fa-calendar-alt"></i>
+                      </div>
+                      Calendar
+                  </div>
+                  <div class="col-xs-2">
+                      <div>
+                          <i class="far fa-envelope"></i>
+                      </div>
+                      Email
+                  </div>
+                  <div class="col-xs-2">
+                      <div>
+                          <i class="fas fa-arrow-up"></i>
+                      </div>
+                      Arrow Up
+                  </div>
+              </div>
+        </div>
+        <div class="col-sm-8 mx-auto">
+          <h1>Navbar examples</h1>
+          <p>This example is a quick exercise to illustrate how the navbar and its contents work. Some navbars extend the width of the viewport, others are confined within a <code>.container</code>. For positioning of navbars, checkout the <a href="../navbar-top/">top</a> and <a href="../navbar-top-fixed/">fixed top</a> examples.</p>
+          <p>At the smallest breakpoint, the collapse plugin is used to hide the links and show a menu button to toggle the collapsed content.</p>
+          <p>
+            <a class="btn btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <%= require('html-loader!./template/common/footer.html') %>
+
+  </div>
+
+  
+</body>
+
+</html>
